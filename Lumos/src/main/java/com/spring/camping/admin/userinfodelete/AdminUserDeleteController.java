@@ -12,7 +12,6 @@ import com.spring.camping.admin.orderlist.AdminOrderList_IDao;
 
 
 @Controller
-@RequestMapping("admin/")
 public class AdminUserDeleteController {
 
 	@Autowired
@@ -21,7 +20,7 @@ public class AdminUserDeleteController {
 	/**
 	 * 
 	 */
-	@RequestMapping("user_delete")
+	@RequestMapping("admin_user_delete")
 	public String admin_user_delete(HttpServletRequest request, Model model) {
 		System.out.println("admin_user_delete()");
 		
@@ -29,7 +28,7 @@ public class AdminUserDeleteController {
 		dao.adminUserDelete(request.getParameter("userId"));
 		
 		
-		return "redirect:userinfo";
+		return "redirect:admin_userinfo";
 	}
 	
 	

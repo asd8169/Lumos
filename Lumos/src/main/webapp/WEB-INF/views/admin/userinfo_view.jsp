@@ -130,7 +130,7 @@ a {
 				<td>${user.userEmail}</td>
 
 
-				<td><a href="admin/user_delete?userId=${user.userId}">삭제</a></td>
+				<td><a href="admin_user_delete?userId=${user.userId}">삭제</a></td>
 
 
 

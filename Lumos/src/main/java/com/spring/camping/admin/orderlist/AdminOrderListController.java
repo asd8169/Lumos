@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("admin/")
 public class AdminOrderListController {
 
 	@Autowired
@@ -17,7 +16,7 @@ public class AdminOrderListController {
 	/**
 	 * 
 	 */
-	@RequestMapping("order_list")
+	@RequestMapping("admin_order_list")
 	public String admin_order_list(Model model) {
 		System.out.println("admin_order_list()");
 		AdminOrderList_IDao dao = sqlSession.getMapper(AdminOrderList_IDao.class);
