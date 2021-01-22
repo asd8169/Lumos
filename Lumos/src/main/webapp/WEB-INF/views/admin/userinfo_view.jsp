@@ -82,10 +82,13 @@ a {
 	</c:if>
 
 	<div class="search_wrap">
+
 		<form action="userinfoSearch">
 
 
+
 			검색 선택 : <select name="select">
+
 
 				<option value="USERID" selected="selected">ID</option>
 				<option value="USERNAME">Name</option>
@@ -93,6 +96,7 @@ a {
 				<!-- <option value="Address">Address</option> -->
 				<option value="USEREMAIL">Email</option>
 
+		
 			</select>&nbsp;&nbsp;&nbsp; <input type="text" name="content" size="30" /> <input
 				type="submit" value="검색">
 
@@ -125,7 +129,9 @@ a {
 				<td>${user.zipNo}${user.roadAddrPart1}${user.addrDetail}</td>
 				<td>${user.userEmail}</td>
 
-				<td><a href="userInfoDelete.do?userId=${user.userId}">삭제</a></td>
+
+				<td><a href="admin/user_delete?userId=${user.userId}">삭제</a></td>
+
 
 
 			</tr>
