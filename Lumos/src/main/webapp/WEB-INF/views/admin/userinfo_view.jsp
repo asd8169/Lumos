@@ -83,7 +83,7 @@ a {
 
 	<div class="search_wrap">
 
-		<form action="userinfoSearch">
+		<form action="admin_userinfoSearch">
 
 
 
@@ -96,7 +96,6 @@ a {
 				<!-- <option value="Address">Address</option> -->
 				<option value="USEREMAIL">Email</option>
 
-		
 			</select>&nbsp;&nbsp;&nbsp; <input type="text" name="content" size="30" /> <input
 				type="submit" value="검색">
 

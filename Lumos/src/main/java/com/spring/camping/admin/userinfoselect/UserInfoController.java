@@ -26,23 +26,13 @@ public class UserInfoController {
 	//회원리스트
 	@RequestMapping("admin_userinfo")
 	public String userinfo(Model model) {
+		System.out.println("admin_userinfo()");
 		CUserInfoDao dao = sqlSession.getMapper(CUserInfoDao.class);
 		model.addAttribute("userInfoList", dao.selectUserInfo());
 		return "admin/userinfo_view";		
-		
 	}
 	
-	
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 }
