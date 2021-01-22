@@ -24,7 +24,7 @@ public class UserInfoController {
 		
 	
 	//회원리스트
-	@RequestMapping("userinfo")
+	@RequestMapping("admin_userinfo")
 	public String userinfo(Model model) {
 		CUserInfoDao dao = sqlSession.getMapper(CUserInfoDao.class);
 		model.addAttribute("userInfoList", dao.selectUserInfo());
