@@ -24,7 +24,8 @@ public class AdminOrderListController {
 		model.addAttribute("orderlist", dao.listDao());
 		
 		
-		return "admin/admin_order_list";
+		return "admin/admin_order_list"; //admin 폴더에 넣어줌
+		
 	}
 	
 	
