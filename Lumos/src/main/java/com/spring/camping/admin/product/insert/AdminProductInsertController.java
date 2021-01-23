@@ -55,7 +55,7 @@ public class AdminProductInsertController {
 		
 			System.out.println(request.getParameter("pName"));
 			
-			return "redirect:admin_Product_list";
+			return "redirect:product_list";
 			}
 		}
 		

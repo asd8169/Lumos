@@ -17,8 +17,11 @@ public class AdminProductListController {
 	@Autowired
 	private SqlSession sqlSession;
 
+
+	
+	
 	// Admin Product List 연결
-	@RequestMapping("admin_Product_list")
+	@RequestMapping("product_list")
 	public String admin_product_list(Model model) {
 		AdminProductList_IDao dao = sqlSession.getMapper(AdminProductList_IDao.class);
 		model.addAttribute("productlist", dao.productlistDao());
