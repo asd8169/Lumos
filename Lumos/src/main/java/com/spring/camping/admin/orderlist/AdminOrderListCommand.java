@@ -1,6 +1,7 @@
 package com.spring.camping.admin.orderlist;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -9,10 +10,12 @@ import javax.servlet.http.HttpSession;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.ui.Model;
 
-import com.spring.camping.admin.product.list.AdminProductList_IDao;
 import com.spring.camping.icommand.ICommand;
 
 public class AdminOrderListCommand implements ICommand {
+	
+	
+	ArrayList<COrderDto> orderList = null;
 
 	@Override
 	public void execute(SqlSession sqlSession, HttpServletRequest request, Model model, HttpSession session)
@@ -33,7 +36,15 @@ public class AdminOrderListCommand implements ICommand {
 			
 			
 			AdminOrderList_IDao dao = sqlSession.getMapper(AdminOrderList_IDao.class);
-			model.addAttribute("orderlist", dao.listDao(startNum));
+			orderList = dao.listDao(startNum);
+			
+			for (int i = 0; i < orderList.size(); i++) {
+				orderList.get(i).setPprice(orderList.get(i).getOrderQuantity() * orderList.get(i).getPprice());
+			}
+			
+			
+			model.addAttribute("orderlist", orderList);
+			
 			
 						
 			// CMainDao/getBoardCount메소드로 전체 글 갯수 구해서 totalRow에 저장

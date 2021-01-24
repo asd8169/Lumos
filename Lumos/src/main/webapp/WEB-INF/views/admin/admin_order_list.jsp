@@ -61,6 +61,8 @@ a {
 	
 <body>
     <%@include file="../header/header.jsp"%> 
+    
+    
 	<div>
 		<form id="checklist">
 			<div class="detail_title">
@@ -72,7 +74,7 @@ a {
 					<th style="width: 20%;">PRODUCT</th>
 					<th >QUANTITY</th>
 					<th >PRICE</th>
-					<th style="width: 20%;">NAME</th>
+					<th style="width: 20%;">ADDRESS</th>
 					<th>USER</th>
 					<th>DATE</th>
 				</tr>
@@ -83,7 +85,7 @@ a {
 						<%-- <input type="hidden" name="pNo" value="${orderlist.pNo}"> --%>
 						<td>${orderlist.pName}</td>
 						<td>${orderlist.orderQuantity}</td>
-					 	<td>${orderlist.price}</td> 
+					 	<td>${orderlist.pprice}</td> 
 						<td>${orderlist.orderAddress}</td>
 						<td>${orderlist.userId}</td>
 						<td>${orderlist.orderDate}</td>
