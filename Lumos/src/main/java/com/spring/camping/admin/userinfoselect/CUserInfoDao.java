@@ -8,5 +8,4 @@ public interface CUserInfoDao {
 	
 	public int getBoardCount();
 	
-	
 }

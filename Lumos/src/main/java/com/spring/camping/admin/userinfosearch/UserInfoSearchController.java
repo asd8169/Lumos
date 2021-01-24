@@ -24,8 +24,6 @@ public class UserInfoSearchController {
 	//회원리스트
 	@RequestMapping("admin_userinfoSearch")
 	public String userinfoSearch(HttpServletRequest request,Model model) {
-//		System.out.println(select);
-//		System.out.println(content);
 		CUserInfoSearchDao dao = sqlSession.getMapper(CUserInfoSearchDao.class);
 		System.out.println(request.getParameter("select"));
 		System.out.println(request.getParameter("content"));
