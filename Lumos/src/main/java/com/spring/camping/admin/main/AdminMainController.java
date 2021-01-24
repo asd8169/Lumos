@@ -11,4 +11,7 @@ public class AdminMainController {
 	
 		return "admin/admin_main";
 	}
+	
+	
+	
 }
