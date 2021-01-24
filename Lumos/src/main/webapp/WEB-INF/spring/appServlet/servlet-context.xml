@@ -30,7 +30,8 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.spring.camping" />
+	<!-- 특정 패키지명뿐만 아니라 모두사용가능하게 *로 변경 / 변경전) .camping -->
+	<context:component-scan base-package="com.spring.*" />
 	
 	
 	<!-- dataSource 정의 -->
