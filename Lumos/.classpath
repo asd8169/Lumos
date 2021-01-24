@@ -25,8 +25,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-
-	<classpathentry exported="true" kind="lib" path="/Users/tj/Desktop/cos.jar"/>
-
+	<classpathentry kind="lib" path="/Users/p2noo/Desktop/program/util/cos.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

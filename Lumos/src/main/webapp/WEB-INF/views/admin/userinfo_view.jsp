@@ -148,13 +148,13 @@ a {
 			<c:if test="${startPage!=1}">
 
 				<!-- 이전 버튼만들기 -->
-				<a href="./userinfo.do?&page=${startPage-1}">[이전]</a>
+				<a href="./admin_userinfo?&page=${startPage-1}">[이전]</a>
 			</c:if>
 
 			<!-- for문으로 번호 생성 -->
 			<c:forEach var="i" begin="${startPage}" end="${endPage}"
 				varStatus="cnt">
-				<a href="./userinfo.do?&page=${i}">[ <font color="#000000" /> <c:if
+				<a href="./admin_userinfo?&page=${i}">[ <font color="#000000" /> <c:if
 						test="${currentPage == i}">
 						<font color="#bbbbbb"/>
 					</c:if> ${i} </font>]
@@ -163,7 +163,7 @@ a {
 
 			<!-- endPage가 totalPage와 값이 다를때 -->
 			<c:if test="${endPage!=totalPage}">
-				<a href="./userinfo.do?&page=${endPage+1}">다음 ▶</a>
+				<a href="./admin_userinfo?&page=${endPage+1}">다음 ▶</a>
 			</c:if>
 
 		</tr>
