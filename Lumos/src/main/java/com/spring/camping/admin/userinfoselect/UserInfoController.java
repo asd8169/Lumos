@@ -5,7 +5,7 @@ import java.io.IOException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+
 import javax.servlet.http.HttpSession;
 
 import org.apache.ibatis.session.SqlSession;
@@ -15,7 +15,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.spring.camping.icommand.CUserInfoCommand;
 import com.spring.camping.icommand.ICommand;
 
 
@@ -34,7 +33,7 @@ public class UserInfoController {
 		
 	ICommand command = null;
 	
-//	//회원리스트
+	//회원리스트
 	@RequestMapping("admin_userinfo")
 	public String userinfo(HttpServletRequest request,Model model,HttpSession session) throws ServletException, IOException {
 		

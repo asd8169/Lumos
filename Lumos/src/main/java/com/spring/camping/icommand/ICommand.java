@@ -14,4 +14,7 @@ public interface ICommand {
 	
 	public void execute(SqlSession sqlSession, HttpServletRequest request, Model model, HttpSession session) throws ServletException, IOException;
 
+	
+	
+	
 }

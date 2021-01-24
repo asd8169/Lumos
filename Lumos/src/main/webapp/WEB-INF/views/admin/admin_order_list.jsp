@@ -94,6 +94,37 @@ a {
 
 		</form>
 	</div>
+	
+				<!-- 페이징 -->
+<br><br>
+	<table>
+
+		<tr>
+			<!-- startPage가 1이 아닐때  -->
+			<c:if test="${startPage!=1}">
+
+				<!-- 이전 버튼만들기 -->
+				<a href="./admin_order_list?&page=${startPage-1}">[이전]</a>
+			</c:if>
+
+			<!-- for문으로 번호 생성 -->
+			<c:forEach var="i" begin="${startPage}" end="${endPage}"
+				varStatus="cnt">
+				<a href="./admin_order_list?&page=${i}">[ <font color="#000000" /> <c:if
+						test="${currentPage == i}">
+						<font color="#bbbbbb"/>
+					</c:if> ${i} </font>]
+				</a>
+			</c:forEach>
+
+			<!-- endPage가 totalPage와 값이 다를때 -->
+			<c:if test="${endPage!=totalPage}">
+				<a href="./admin_order_list?&page=${endPage+1}">다음 ▶</a>
+			</c:if>
+
+		</tr>
+
+	</table>
 
 	
 </body>

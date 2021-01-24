@@ -8,7 +8,8 @@
 
 	<select id="search" parameterType = "String" resultType="com.spring.camping.admin.userinfosearch.CUserInfoSearchDto">
 		SELECT * FROM USERINFO WHERE ${param1} LIKE CONCAT('%',#{param2},'%')
-	
+				
+		
 	</select>
 										
 </mapper>

@@ -3,5 +3,10 @@ package com.spring.camping.admin.product.list;
 import java.util.ArrayList;
 
 public interface AdminProductList_IDao {
-	public ArrayList<AdminProductlistDto> productlistDao();
+	
+	public ArrayList<AdminProductlistDto> productlistDao(int startNum);
+	
+	
+	public int getBoardCount();
+	
 }
