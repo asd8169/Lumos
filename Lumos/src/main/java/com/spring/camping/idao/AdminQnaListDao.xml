@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.camping.admin.qna.list.AdminQnaList_IDao">
+
+	<select id="qnalistDao"
+		resultType="com.spring.camping.admin.qna.list.AdminQnalistDto">
+		SELECT QNANO, QNASECRET, PNAME, QNATITLE, QNAUSERID, QNADATE FROM QNA, PRODUCT
+		WHERE PRODUCT_PNO = PNO
+	</select>
+
+</mapper>
