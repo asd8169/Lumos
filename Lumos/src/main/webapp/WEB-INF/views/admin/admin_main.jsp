@@ -40,7 +40,7 @@
 		<a href="admin_userinfo"><div class="admin_menu">LUMOS MEMBERS</div></a> 
 		<a href="product_list"><div class="admin_menu">PRODUCT</div></a> 
 		<a href="admin_order_list"><div class="admin_menu">ORDER LIST</div></a>
-		<a href="qnaAdmin"><div class="admin_menu">Q & A</div></a> 
+		<a href="admin_qna_list"><div class="admin_menu">Q & A</div></a> 
 		<a href="#"><div class="admin_menu">GO LUMOS</div></a>
 
 	</div>

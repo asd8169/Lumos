@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.camping.qna.view.QnaView_IDao">
+
+	<select id="qnaviewDao" resultType="com.spring.camping.qna.view.QnaViewDto">
+		SELECT QNANO, USERINFO_USERNO, QNAUSERID, QNATITLE, QNACONTENT, QNACOMMENT
+		FROM QNA WHERE QNANO = #{param1}
+	</select>
+
+</mapper>

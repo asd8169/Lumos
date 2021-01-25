@@ -81,7 +81,7 @@ a {
 						<td>${qnadto.pName}</td>
 
 						
-						<td><a href="qna_view.do?qnaNo=${qnadto.qnaNo }">${qnadto.qnaTitle}</a></td>
+						<td><a href="qna_view?qnaNo=${qnadto.qnaNo }">${qnadto.qnaTitle}</a></td>
 
 						<td>${qnadto.qnauserId}</td>
 						<td>${qnadto.qnaDate}</td>
